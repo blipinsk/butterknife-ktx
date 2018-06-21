@@ -52,8 +52,13 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support:appcompat-v7:27.1.1'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    kapt project(':butterknife-ktx-compiler')
-    implementation project(':butterknife-ktx')
+
+//    kapt project(':butterknife-ktx-compiler')
+//    implementation project(':butterknife-ktx')
+
+    kapt 'com.bartoszlipinski:butterknife-ktx-compiler:0.1.0'
+    implementation 'com.bartoszlipinski:butterknife-ktx:0.1.0'
+
     implementation 'com.jakewharton:butterknife:8.8.1'
     kapt 'com.jakewharton:butterknife-compiler:8.8.1'
 }

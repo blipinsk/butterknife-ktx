@@ -1,12 +1,15 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
-apply plugin: 'com.novoda.bintray-release'
+apply plugin: 'org.jetbrains.dokka-android'
 
 def cfg = rootProject.ext.configuration
-def bintrayCfg = rootProject.ext.bintrayConfig
 
 sourceCompatibility = JavaVersion.VERSION_1_8
 targetCompatibility = JavaVersion.VERSION_1_8
+
+tasks.withType(Javadoc).all {
+    enabled = false
+}
 
 android {
     compileSdkVersion 27
@@ -25,13 +28,4 @@ dependencies {
     compileOnly "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
 }
 
-publish {
-    artifactId = bintrayCfg.artifactLibrary
-    userOrg = bintrayCfg.userOrg
-    groupId = bintrayCfg.groupId
-    uploadName = bintrayCfg.name
-    publishVersion = cfg.versionName
-    desc = bintrayCfg.description
-    website = bintrayCfg.website
-    licences = bintrayCfg.licences
-}
+apply from: rootProject.file('gradle/upload_to_bintray.gradle')

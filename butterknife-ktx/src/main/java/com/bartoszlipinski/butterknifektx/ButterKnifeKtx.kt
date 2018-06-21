@@ -35,30 +35,30 @@ fun ButterKnifeKtx.bind(target: Activity): Unbinder {
 @UiThread
 fun ButterKnifeKtx.bind(target: View): Unbinder {
     throw IllegalStateException("ButterKnife ViewBinding wasn't generated. " +
-        "Are you sure you used ButterKnife annotations in the target class?")
+            "Are you sure you used ButterKnife annotations in the target class?")
 }
 
 @UiThread
 fun ButterKnifeKtx.bind(target: Dialog): Unbinder {
     throw IllegalStateException("ButterKnife ViewBinding wasn't generated. " +
-        "Are you sure you used ButterKnife annotations in the target class?")
+            "Are you sure you used ButterKnife annotations in the target class?")
 }
 
 @UiThread
 fun ButterKnifeKtx.bind(target: Any, source: Activity): Unbinder {
     throw IllegalStateException("ButterKnife ViewBinding wasn't generated. " +
-        "Are you sure you used ButterKnife annotations in the target class?")
+            "Are you sure you used ButterKnife annotations in the target class?")
 }
 
 @UiThread
 fun ButterKnifeKtx.bind(target: Any, source: View): Unbinder {
     throw IllegalStateException("ButterKnife ViewBinding wasn't generated. " +
-        "Are you sure you used ButterKnife annotations in the target class?")
+            "Are you sure you used ButterKnife annotations in the target class?")
 }
 
 @UiThread
 fun ButterKnifeKtx.bind(target: Any, source: Dialog): Unbinder {
     throw IllegalStateException("ButterKnife ViewBinding wasn't generated. " +
-        "Are you sure you used ButterKnife annotations in the target class?")
+            "Are you sure you used ButterKnife annotations in the target class?")
 }
 

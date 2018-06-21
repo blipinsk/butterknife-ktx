@@ -12,8 +12,17 @@ TODO
 
 Including In Your Project
 -------------------------
+Add in your `build.gradle`:
+```xml
+repositories {
+    maven { url 'https://dl.bintray.com/blipinsk/maven/' }
+}
 
-TODO
+dependencies {
+    kapt "com.bartoszlipinski:butterknife-ktx-compiler:0.1.0"
+    implementation "com.bartoszlipinski:butterknife-ktx:0.1.0"
+}
+```
 
 Developed by
 ============

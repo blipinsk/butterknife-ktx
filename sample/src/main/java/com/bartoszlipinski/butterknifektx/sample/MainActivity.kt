@@ -43,7 +43,7 @@ class MainActivity : Activity() {
 
 //        ButterKnife.bind(this) //<-- uses Java Reflection
 
-        ButterKnifeKtx().bind(this) //<-- uses Kotlin extension function
+        ButterKnifeKtx.bind(this) //<-- uses Kotlin extension function
     }
 
     class ViewHolder(view: View) {
@@ -51,7 +51,7 @@ class MainActivity : Activity() {
         lateinit var name: TextView
 
         init {
-            ButterKnife.bind(this, view)
+            ButterKnifeKtx.bind(this, view)
         }
 
         class InnerViewHolder(view: View) {
@@ -59,7 +59,7 @@ class MainActivity : Activity() {
             lateinit var name: TextView
 
             init {
-                ButterKnife.bind(this, view)
+                ButterKnifeKtx.bind(this, view)
             }
         }
     }

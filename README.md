@@ -32,7 +32,7 @@ Usage
      }
      ```
 
- 2. Change `ButterKnife.bind(target)` to `ButterKnifeKtx().bind(target)` (add `Ktx` after `ButterKnife`)
+ 2. Change `ButterKnife.bind(target)` to `ButterKnifeKtx.bind(target)` (add `Ktx` after `ButterKnife`)
  3. Enjoy **Reflection-free** `ButterKnife`
 
 Including In Your Project

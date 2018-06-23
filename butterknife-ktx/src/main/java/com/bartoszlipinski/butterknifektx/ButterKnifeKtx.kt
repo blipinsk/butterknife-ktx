@@ -24,7 +24,7 @@ import android.view.View
 import butterknife.Unbinder
 
 // Extension Bridge "End Cap"
-class ButterKnifeKtx
+object ButterKnifeKtx
 
 @UiThread
 fun ButterKnifeKtx.bind(target: Activity): Unbinder {

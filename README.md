@@ -1,9 +1,12 @@
 butterknife-ktx
 ===============
+**Uttilizing Kotlin extension functions instead of Java Reflection.**
 
-Kotlin extension bridge library for [ButterKnife](https://github.com/JakeWharton/butterknife) (proof-of-concept)
+---
 
-Read more here: [Kotlin extension function generation 🚀… here's why it's a game-changer for Annotation Processing.](https://medium.com/@blipinsk/kotlin-extension-methods-generation-15b5e6499dc8)
+*Kotlin extension bridge library for [ButterKnife](https://github.com/JakeWharton/butterknife) (proof-of-concept)*
+
+Read more here: [Kotlin extension function generation 🚀…](https://medium.com/@blipinsk/kotlin-extension-methods-generation-15b5e6499dc8)
 
 Usage
 =====
@@ -32,7 +35,18 @@ Usage
      }
      ```
 
- 2. Change `ButterKnife.bind(target)` to `ButterKnifeKtx.bind(target)` (add `Ktx` after `ButterKnife`)
+ 2. Change:
+
+    ```java
+    ButterKnife.bind(target)
+    ```
+
+    to (add `Ktx` after `ButterKnife`):
+
+    ```java
+    ButterKnifeKtx.bind(target)
+    ```
+
  3. Enjoy **Reflection-free** `ButterKnife`
 
 Including In Your Project

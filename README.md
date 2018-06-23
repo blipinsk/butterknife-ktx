@@ -10,7 +10,7 @@ Read more here: [Kotlin extension function generation 🚀…](https://medium.co
 
 Usage
 =====
-*For a working implementation of this library see the `sample/` module.*
+*For a working usage of this library see the `sample/` module.*
 
  1. Add to your app's `build.gradle`
 

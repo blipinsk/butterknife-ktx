@@ -44,8 +44,8 @@ repositories {
 }
 
 dependencies {
-    kapt "com.bartoszlipinski:butterknife-ktx-compiler:0.1.0"
-    implementation "com.bartoszlipinski:butterknife-ktx:0.1.0"
+    kapt "com.bartoszlipinski:butterknife-ktx-compiler:0.2.0"
+    implementation "com.bartoszlipinski:butterknife-ktx:0.2.0"
 }
 ```
 

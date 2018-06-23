@@ -1,6 +1,6 @@
 butterknife-ktx
 ===============
-**Uttilizing Kotlin extension functions instead of Java Reflection.**
+**ButterKnife using Kotlin extension functions instead of Java Reflection.**
 
 ---
 
